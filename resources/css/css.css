@@ -1,0 +1,86 @@
+body{
+	margin: 0px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	color: lightgray;
+}
+
+
+body{
+	font-family: sans-serif;
+	overflow: hidden;
+	/*
+	margin: 0px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	*/
+}
+
+#manager{
+	overflow: auto;
+}
+
+#textArea p {
+	color: lightgray;	
+	font-size: xxx-large;
+
+
+}
+
+/*
+#textArea p{	
+	animation-name: prevLine;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-direction: normal;
+}
+*/
+
+#textArea.prevLineAnim p {	
+	animation-name: prevLine;
+	animation-duration: 0.8s;
+	animation-timing-function: ease;
+	animation-direction: normal;
+}
+
+#textArea p:first-child{
+	/*font-size: 1.5em;*/
+	font-weight: bold;
+	color: white;
+	animation-name: firstLine;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+html {
+	background-color: #222222;
+}
+@keyframes prevLine {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes firstLine {
+	0% {
+		opacity: 0;
+
+	}
+	100% {
+		opacity: 1;
+
+	}
+}
